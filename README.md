@@ -56,7 +56,7 @@ A full stack application that allows user to authenticate it self and create cus
 ## Clone Repository
 
 ```sh
-git clone git remote add origin https://github.com/wasimAkram8529/Airtable-Form-Frontend.git
+git clone https://github.com/wasimAkram8529/Airtable-Form-Frontend.git
 ```
 
 ## Setup
