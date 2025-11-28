@@ -66,6 +66,12 @@ cd Airtable-Form-Frontend
 npm install
 ```
 
+## Create .env
+
+```env
+VITE_BACKEND_URL=http://localhost:5000
+```
+
 ## Webhook Configuration
 
 - Download ngrok
@@ -90,12 +96,6 @@ VITE_BACKEND_URL=<https URL>
 - Restart Your Server
 - Navigate to form builder
 - Click Enable Airtable Sync
-
-## Create .env
-
-```env
-BACKEND_URL=http://localhost:5000
-```
 
 ## How to Run
 
