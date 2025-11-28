@@ -93,6 +93,20 @@ export default function FormBuilder() {
     window.location.href = `${BACKEND_URL}/auth/airtable/login`;
   };
 
+  const handleEnableSync = async () => {
+    try {
+      await apiPost("/webhook-setup/register", {
+        baseId: selectedBase,
+        tableId: selectedTable,
+      });
+
+      alert("Airtable Sync with DB has been enabled successfully!");
+    } catch (error) {
+      console.error(error);
+      alert("Failed to enable sync. Please try again.");
+    }
+  };
+
   if (error && bases.length === 0) {
     return (
       <div style={{ padding: 20, textAlign: "center" }}>
@@ -115,14 +129,9 @@ export default function FormBuilder() {
       </button>
       <button
         disabled={!selectedBase || !selectedTable}
-        onClick={() =>
-          apiPost("/webhook-setup/register", {
-            baseId: selectedBase,
-            tableId: selectedTable,
-          })
-        }
+        onClick={handleEnableSync}
       >
-        Enable Airtable Sync
+        Enable Airtable Sync with DB
       </button>
 
       <h2 style={{ marginBottom: 20 }}>Form Builder</h2>
