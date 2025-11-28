@@ -62,7 +62,7 @@ git clone git remote add origin https://github.com/wasimAkram8529/Airtable-Form-
 ## Setup
 
 ```sh
-cd Ansible-Form-Frontend
+cd Airtable-Form-Frontend
 npm install
 ```
 
