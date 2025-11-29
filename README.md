@@ -16,7 +16,7 @@ A full stack application that allows user to authenticate it self and create cus
 - Live preview & form rendering
 - Save responses to Airtable + MongoDB
 - Export responses as CSV and JSON
-- Airtable -> App sync using Webhooks
+- Airtable sync with DB
 - Logout and session handling
 
 ## Tech Stack
@@ -30,8 +30,6 @@ A full stack application that allows user to authenticate it self and create cus
 ## Project Structure
 
 - Frontend(Major folders and files)
-
-  - node_modules
   - public
   - src
     - components
@@ -94,8 +92,16 @@ VITE_BACKEND_URL=<https URL>
 ```
 
 - Restart Your Server
-- Navigate to form builder
-- Click Enable Airtable Sync
+- Navigate to form builder of your frontend
+- Give a name to your form(Optional)
+- Select a base
+- Select a table
+- Select required fields in your form
+- Create a new form
+- Fill the form and save the response
+- Go to your airtable account
+- Make some changes in particular row of that response in airtable bases table
+- Refresh the response you will see the updated data from airtable bases table
 
 ## How to Run
 
@@ -103,8 +109,8 @@ VITE_BACKEND_URL=<https URL>
 npm run dev
 ```
 
-- Open http://localhost:5173
+- Open "http://localhost:5173"
 
-## Demo
+## Demo video
 
 - "https://drive.google.com/file/d/1MSfLLhSGCFR7r8KG43oQXnVjh5fWbYmt/view?usp=sharing"
